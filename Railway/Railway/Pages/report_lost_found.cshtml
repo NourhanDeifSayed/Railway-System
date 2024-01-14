@@ -1,0 +1,131 @@
+﻿@page
+@model Railway.Pages.report_lost_foundModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Report Lost Item</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+
+                <form class="form-horizontal" method="post">
+                    <div class="header">Report Lost Item</div>
+                    <div class="form-content">
+                        <h4 class="heading">Your Details</h4>
+                        <div class="form-group">
+                            <div class="col-sm-6">
+                                <label class="control-label" for="exampleInputName2"><i class="fa fa-user"></i></label>
+                                <input class="form-control" id="exampleInputName2" placeholder="id" type="text">
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="control-label" for="exampleInputLocation"><i class="fa fa-map-marker"></i></label>
+                                <input class="form-control" id="exampleInputLocation" placeholder="Location" type="text" asp-for="@Model.found.location">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="exampleInputDescription"><i class="fa fa-pencil"></i></label>
+                            <textarea class="form-control" id="exampleInputDescription" placeholder="Description" asp-for="@Model.found.desription">Description</textarea>
+                        </div>
+
+                        <div class="clearfix">
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: #e4e6e6;
+    }
+
+    form {
+        font-family: 'Roboto', sans-serif;
+        width: 100%;
+        margin-top: 20px;
+        padding-top: 70px;
+    }
+
+    .form-horizontal {
+        margin-top: 20px;
+    }
+
+        .form-horizontal .header {
+            background: #3f9cb5;
+            padding: 30px 25px;
+            font-size: 30px;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+            border-radius: 3px 3px 0 0;
+        }
+
+        .form-horizontal .form-content {
+            padding: 25px;
+            background: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-horizontal .form-control {
+            padding: 12px 16px 12px 39px;
+            height: 50px;
+            font-size: 14px;
+            color: #2b2a2a;
+            border: none;
+            border-bottom: 2px solid #ccc;
+            border-radius: 0;
+            box-shadow: none;
+            margin-bottom: 15px;
+        }
+
+            .form-horizontal .form-control:focus {
+                border-color: #3f9cb5;
+                box-shadow: none;
+            }
+
+        .form-horizontal .control-label {
+            font-size: 17px;
+            color: #ccc;
+            position: absolute;
+            top: 5px;
+            left: 27px;
+            text-align: center;
+        }
+
+        .form-horizontal textarea.form-control {
+            resize: vertical;
+            height: 130px;
+        }
+
+        .form-horizontal .btn {
+            font-size: 18px;
+            color: #fff;
+            float: right;
+            margin: 10px 0;
+            border: none;
+            border-radius: 0;
+            padding: 10px 25px;
+            transition: all 0.5s ease 0s;
+        }
+
+        .form-horizontal .btn-primary {
+            background-color: #3f9cb5;
+        }
+
+        .form-horizontal .btn:hover {
+            background: #2e8091;
+        }
+</style>

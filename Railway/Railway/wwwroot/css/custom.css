@@ -1,0 +1,16 @@
+﻿/* Add this CSS to set the background image for the cover photo */
+.booking-image {
+    position: relative;
+    overflow: hidden;
+}
+
+    .booking-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1; /* Ensure the image is behind other content */
+    }
+

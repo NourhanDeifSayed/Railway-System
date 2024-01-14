@@ -1,0 +1,41 @@
+﻿@page
+@using System.Data.SqlClient;
+@inject ILogger<DeleteModel> logger
+
+@{
+    try
+    {
+        string staffID = Request.Query["StaffID"];
+
+        if (!string.IsNullOrEmpty(staffID) && int.TryParse(staffID, out int id))
+        {
+            logger.LogInformation($"Received StaffID: {id}");
+
+            string connectionString = "Data Source=DESKTOP-8f1CJGM;Initial Catalog=newRailWay2;Integrated Security=True";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                string sql = "DELETE FROM Staff WHERE StaffID=@id;";
+
+                using (SqlCommand command = new SqlCommand(sql, connection))
+                {
+                    command.Parameters.AddWithValue("@id", id);
+                    command.ExecuteNonQuery();
+                }
+            }
+            Response.Redirect("/stuff_information");
+        }
+        else
+        {
+            logger.LogError("Invalid or missing StaffID parameter.");
+            // Add logic to handle the case where the StaffID is invalid or missing
+            // You can also return a message or redirect the user to an error page
+        }
+    }
+    catch (Exception ex)
+    {
+        logger.LogError(ex, "Error occurred while deleting Staff record.");
+        // Handle exceptions or errors here
+        // You can return a message or redirect the user to an error page
+    }
+}

@@ -1,0 +1,135 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Railway
+build_property.RootNamespace = Railway
+build_property.ProjectDir = C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/20106/Desktop/FinaProjectlCSAI202 (1)(1)/Railway/Railway/Pages/AddStuff.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkU3R1ZmYuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/20106/Desktop/FinaProjectlCSAI202 (1)(1)/Railway/Railway/Pages/Booking.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va2luZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/20106/Desktop/FinaProjectlCSAI202 (1)(1)/Railway/Railway/Pages/complaint.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY29tcGxhaW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/20106/Desktop/FinaProjectlCSAI202 (1)(1)/Railway/Railway/Pages/Dash.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/20106/Desktop/FinaProjectlCSAI202 (1)(1)/Railway/Railway/Pages/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/20106/Desktop/FinaProjectlCSAI202 (1)(1)/Railway/Railway/Pages/discover.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZGlzY292ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/20106/Desktop/FinaProjectlCSAI202 (1)(1)/Railway/Railway/Pages/Display.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzcGxheS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/20106/Desktop/FinaProjectlCSAI202 (1)(1)/Railway/Railway/Pages/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/20106/Desktop/FinaProjectlCSAI202 (1)(1)/Railway/Railway/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/20106/Desktop/FinaProjectlCSAI202 (1)(1)/Railway/Railway/Pages/ForgetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9yZ2V0UGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/20106/Desktop/FinaProjectlCSAI202 (1)(1)/Railway/Railway/Pages/help.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcaGVscC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/20106/Desktop/FinaProjectlCSAI202 (1)(1)/Railway/Railway/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/20106/Desktop/FinaProjectlCSAI202 (1)(1)/Railway/Railway/Pages/login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/20106/Desktop/FinaProjectlCSAI202 (1)(1)/Railway/Railway/Pages/lost_found.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbG9zdF9mb3VuZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/20106/Desktop/FinaProjectlCSAI202 (1)(1)/Railway/Railway/Pages/Maneger.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFuZWdlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/20106/Desktop/FinaProjectlCSAI202 (1)(1)/Railway/Railway/Pages/maneger_login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbWFuZWdlcl9sb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/20106/Desktop/FinaProjectlCSAI202 (1)(1)/Railway/Railway/Pages/maneger_profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbWFuZWdlcl9wcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/20106/Desktop/FinaProjectlCSAI202 (1)(1)/Railway/Railway/Pages/payment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccGF5bWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/20106/Desktop/FinaProjectlCSAI202 (1)(1)/Railway/Railway/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/20106/Desktop/FinaProjectlCSAI202 (1)(1)/Railway/Railway/Pages/profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/20106/Desktop/FinaProjectlCSAI202 (1)(1)/Railway/Railway/Pages/report_lost_found.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccmVwb3J0X2xvc3RfZm91bmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/20106/Desktop/FinaProjectlCSAI202 (1)(1)/Railway/Railway/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/20106/Desktop/FinaProjectlCSAI202 (1)(1)/Railway/Railway/Pages/signup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc2lnbnVwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/20106/Desktop/FinaProjectlCSAI202 (1)(1)/Railway/Railway/Pages/station_information.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc3RhdGlvbl9pbmZvcm1hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/20106/Desktop/FinaProjectlCSAI202 (1)(1)/Railway/Railway/Pages/stuff_information.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc3R1ZmZfaW5mb3JtYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/20106/Desktop/FinaProjectlCSAI202 (1)(1)/Railway/Railway/Pages/well_done.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcd2VsbF9kb25lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/20106/Desktop/FinaProjectlCSAI202 (1)(1)/Railway/Railway/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/20106/Desktop/FinaProjectlCSAI202 (1)(1)/Railway/Railway/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/20106/Desktop/FinaProjectlCSAI202 (1)(1)/Railway/Railway/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-25nuowvhop

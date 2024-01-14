@@ -1,0 +1,174 @@
+C:\Users\pc\source\repos\Railway\Railway\obj\Debug\net6.0\Railway.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\source\repos\Railway\Railway\obj\Debug\net6.0\Railway.AssemblyInfoInputs.cache
+C:\Users\pc\source\repos\Railway\Railway\obj\Debug\net6.0\Railway.AssemblyInfo.cs
+C:\Users\pc\source\repos\Railway\Railway\obj\Debug\net6.0\Railway.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\Railway\Railway\obj\Debug\net6.0\Railway.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\pc\source\repos\Railway\Railway\obj\Debug\net6.0\Railway.RazorAssemblyInfo.cache
+C:\Users\pc\source\repos\Railway\Railway\obj\Debug\net6.0\Railway.RazorAssemblyInfo.cs
+C:\Users\pc\source\repos\Railway\Railway\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\pc\source\repos\Railway\Railway\bin\Debug\net6.0\appsettings.json
+C:\Users\pc\source\repos\Railway\Railway\bin\Debug\net6.0\Railway.staticwebassets.runtime.json
+C:\Users\pc\source\repos\Railway\Railway\bin\Debug\net6.0\Railway.exe
+C:\Users\pc\source\repos\Railway\Railway\bin\Debug\net6.0\Railway.deps.json
+C:\Users\pc\source\repos\Railway\Railway\bin\Debug\net6.0\Railway.runtimeconfig.json
+C:\Users\pc\source\repos\Railway\Railway\bin\Debug\net6.0\Railway.dll
+C:\Users\pc\source\repos\Railway\Railway\bin\Debug\net6.0\Railway.pdb
+C:\Users\pc\source\repos\Railway\Railway\obj\Debug\net6.0\staticwebassets\msbuild.Railway.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\pc\source\repos\Railway\Railway\obj\Debug\net6.0\staticwebassets\msbuild.build.Railway.props
+C:\Users\pc\source\repos\Railway\Railway\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Railway.props
+C:\Users\pc\source\repos\Railway\Railway\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Railway.props
+C:\Users\pc\source\repos\Railway\Railway\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\pc\source\repos\Railway\Railway\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\pc\source\repos\Railway\Railway\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\pc\source\repos\Railway\Railway\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\pc\source\repos\Railway\Railway\obj\Debug\net6.0\scopedcss\bundle\Railway.styles.css
+C:\Users\pc\source\repos\Railway\Railway\obj\Debug\net6.0\scopedcss\projectbundle\Railway.bundle.scp.css
+C:\Users\pc\source\repos\Railway\Railway\obj\Debug\net6.0\Railway.dll
+C:\Users\pc\source\repos\Railway\Railway\obj\Debug\net6.0\refint\Railway.dll
+C:\Users\pc\source\repos\Railway\Railway\obj\Debug\net6.0\Railway.pdb
+C:\Users\pc\source\repos\Railway\Railway\obj\Debug\net6.0\Railway.genruntimeconfig.cache
+C:\Users\pc\source\repos\Railway\Railway\obj\Debug\net6.0\ref\Railway.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\appsettings.json
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\Railway.staticwebassets.runtime.json
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\Railway.exe
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\Railway.deps.json
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\Railway.runtimeconfig.json
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\Railway.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\Railway.pdb
+C:\Users\pc\Desktop\Railway\Railway\obj\Debug\net6.0\Railway.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Desktop\Railway\Railway\obj\Debug\net6.0\Railway.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\Railway\Railway\obj\Debug\net6.0\Railway.AssemblyInfo.cs
+C:\Users\pc\Desktop\Railway\Railway\obj\Debug\net6.0\Railway.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\Railway\Railway\obj\Debug\net6.0\Railway.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\pc\Desktop\Railway\Railway\obj\Debug\net6.0\Railway.RazorAssemblyInfo.cache
+C:\Users\pc\Desktop\Railway\Railway\obj\Debug\net6.0\Railway.RazorAssemblyInfo.cs
+C:\Users\pc\Desktop\Railway\Railway\obj\Debug\net6.0\staticwebassets\msbuild.Railway.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\pc\Desktop\Railway\Railway\obj\Debug\net6.0\staticwebassets\msbuild.build.Railway.props
+C:\Users\pc\Desktop\Railway\Railway\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Railway.props
+C:\Users\pc\Desktop\Railway\Railway\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Railway.props
+C:\Users\pc\Desktop\Railway\Railway\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\pc\Desktop\Railway\Railway\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\pc\Desktop\Railway\Railway\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\pc\Desktop\Railway\Railway\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\pc\Desktop\Railway\Railway\obj\Debug\net6.0\scopedcss\bundle\Railway.styles.css
+C:\Users\pc\Desktop\Railway\Railway\obj\Debug\net6.0\scopedcss\projectbundle\Railway.bundle.scp.css
+C:\Users\pc\Desktop\Railway\Railway\obj\Debug\net6.0\Railway.dll
+C:\Users\pc\Desktop\Railway\Railway\obj\Debug\net6.0\refint\Railway.dll
+C:\Users\pc\Desktop\Railway\Railway\obj\Debug\net6.0\Railway.pdb
+C:\Users\pc\Desktop\Railway\Railway\obj\Debug\net6.0\Railway.genruntimeconfig.cache
+C:\Users\pc\Desktop\Railway\Railway\obj\Debug\net6.0\ref\Railway.dll
+C:\Users\pc\Desktop\Railway\Railway\obj\Debug\net6.0\Railway.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\pc\Desktop\Railway\Railway\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\pc\Desktop\Railway\Railway\obj\Debug\net6.0\Railway.csproj.CopyComplete
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\appsettings.json
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\Railway.staticwebassets.runtime.json
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\Railway.exe
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\Railway.deps.json
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\Railway.runtimeconfig.json
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\Railway.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\Railway.pdb
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\obj\Debug\net6.0\Railway.csproj.AssemblyReference.cache
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\obj\Debug\net6.0\Railway.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\obj\Debug\net6.0\Railway.AssemblyInfoInputs.cache
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\obj\Debug\net6.0\Railway.AssemblyInfo.cs
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\obj\Debug\net6.0\Railway.csproj.CoreCompileInputs.cache
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\obj\Debug\net6.0\Railway.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\obj\Debug\net6.0\Railway.RazorAssemblyInfo.cache
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\obj\Debug\net6.0\Railway.RazorAssemblyInfo.cs
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\obj\Debug\net6.0\staticwebassets\msbuild.Railway.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\obj\Debug\net6.0\staticwebassets\msbuild.build.Railway.props
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Railway.props
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Railway.props
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\obj\Debug\net6.0\scopedcss\bundle\Railway.styles.css
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\obj\Debug\net6.0\scopedcss\projectbundle\Railway.bundle.scp.css
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\obj\Debug\net6.0\Railway.csproj.CopyComplete
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\obj\Debug\net6.0\Railway.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\obj\Debug\net6.0\refint\Railway.dll
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\obj\Debug\net6.0\Railway.pdb
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\obj\Debug\net6.0\Railway.genruntimeconfig.cache
+C:\Users\20106\Desktop\FinaProjectlCSAI202 (1)(1)\Railway\Railway\obj\Debug\net6.0\ref\Railway.dll

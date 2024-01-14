@@ -1,0 +1,193 @@
+﻿@page
+@model Railway.Pages.BookingModel
+@{
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Booking Form</title>
+    <link rel="stylesheet" href="button.css"> <!-- Add your custom styling if needed -->
+
+</head>
+<body>
+    <div class="container1">
+        <form method="post">
+
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" required asp-for="@Model.empInfo.firstName ">
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" required asp-for="@Model.empInfo.lastName">
+
+            <label for="email">Email:</label>
+            <input type="" id="email" required asp-for="@Model.empInfo.Email">
+
+
+
+
+
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" asp-for="@Model.empInfo.PhoneNumber">
+
+            <label for="dcity">Departure City:</label>
+            <input type="tel" id="dcity" asp-for="@Model.empInfo.DepartureCity">
+
+            <label for="acity">Arrival City:</label>
+            <input type="tel" id="acity" required asp-for="@Model.empInfo.ArrivalCity">
+
+            <label>Pick-up Date and Time:</label>
+            <input type="tel" asp-for="@Model.empInfo.bookingDate">
+
+            <label for="ticket_type">Ticket Type:</label>
+            <select id="ticket_type" required asp-for="@Model.empInfo.TicketType">
+                <option value="standard">Standard</option>
+                <option value="premium">Premium</option>
+                <option value="deluxe">Deluxe</option>
+            </select>
+            <a class="button" href="/payment">
+                <p>Book Now!</p>
+            </a>
+
+
+
+
+        </form>
+    </div>
+</body>
+</html>
+<!--photo style-->
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url('images/train3.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: normal;
+        filter: invert(5px)
+    }
+
+</style>
+<!--botton style-->
+<style>
+
+    .button {
+        font-size: 18px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        display: inline-block;
+        text-align: center;
+        font-weight: bold;
+        padding: 0.7em 2em;
+        border: 3px solid #14dd50;
+        border-radius: 2px;
+        position: relative;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+        color: #14dd50;
+        text-decoration: none;
+        transition: 0.3s ease all;
+        z-index: 1;
+    }
+
+        .button:before {
+            transition: 0.5s all ease;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            opacity: 0;
+            content: '';
+            background-color: #14dd50;
+            z-index: -1;
+        }
+
+        .button:hover, button:focus {
+            color: white;
+        }
+
+            .button:hover:before, button:focus:before {
+                transition: 0.5s all ease;
+                left: 0;
+                right: 0;
+                opacity: 1;
+            }
+
+        .button:active {
+            transform: scale(0.9);
+        }
+
+</style>
+<!--form style-->
+<style>
+    body {
+        background-color: #fff; /* Set the background color to white */
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container1 {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 80px;
+        text-align: left; /* Align the text to the left */
+        margin-left: -300px; /* Set the right margin to auto */
+    }
+
+    h2 {
+        text-align: center;
+        color: #333; /* Set the text color to dark gray */
+    }
+
+    form {
+        background-color: #f9f9f9; /* Set the form background color to a light gray */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        display: block;
+        margin: 10px 0;
+        color: #555; /* Set the label color to a darker gray */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="datetime-local"],
+    select {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+
+    input[type="submit"] {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+</style>

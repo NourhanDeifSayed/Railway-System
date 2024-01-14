@@ -1,0 +1,193 @@
+﻿@page
+@model Railway.Pages.YourPageModel
+@{
+}
+
+<form class="form" method="post">
+    <p class="title">Register </p>
+    <p class="message">Signup now and get full access to our app. </p>
+    <div class="flex">
+        <label>
+            <input class="input" type="text" placeholder="" required="" name="firstName" asp-for="@Model.empInfo.FirstName">
+            <span>Firstname</span>
+        </label>
+
+        <label>
+            <input class="input" type="text" placeholder="" required="" name="lastName" asp-for="@Model.empInfo.LastName">
+            <span>Lastname</span>
+        </label>
+    </div>
+    <br />
+    <label>
+        <input class="input" type="email" placeholder="" required="" name="email" asp-for="@Model.empInfo.Email">
+        <span>Email</span>
+    </label>
+    <br />
+    <label>
+        <input class="input" type="password" placeholder="" required="" name="password" asp-for="@Model.empInfo.Password">
+        <span>Password</span>
+    </label>
+    <label>
+        <br />
+        <input class="input" type="password" placeholder="Confirm Password" required="" name="confirmPassword" asp-for="@Model.empInfo.ConfirmPassword">
+        <br />
+    </label>
+    <br />
+    <label>
+        <input class="input" type="number" placeholder="" required="" name="id" asp-for="@Model.empInfo.Id">
+        <span>ID</span>
+    </label>
+    <br />
+    <button class="submit" type="submit">Submit</button>
+    <p class="signin">Already have an account? <a href="/login">Sign in</a> </p>
+</form>
+
+
+<!--form style -->
+<style>
+    .form {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0.75rem;
+        background-color: transparent;
+        color: rgb(97 97 97);
+        box-shadow: 20px 20px 30px rgba(0, 0, 0, .05);
+        width: 80rem;
+        background-clip: border-box;
+    }
+
+    .title {
+        font-size: 28px;
+        color: #3498db;
+        font-weight: 600;
+        letter-spacing: -1px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+    }
+
+        .title::before,
+        .title::after {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            border-radius: 50%;
+            left: 0px;
+            background-color: #3498db;
+        }
+
+        .title::before {
+            width: 18px;
+            height: 18px;
+            color: #3498db;
+        }
+
+        .title::after {
+            width: 18px;
+            height: 18px;
+            animation: pulse 1s linear infinite;
+            color: #3498db;
+        }
+
+    .message,
+    .signin {
+        color: rgba(88, 87, 87, 0.822);
+        font-size: 14px;
+    }
+
+    .signin {
+        text-align: center;
+    }
+
+        .signin a {
+            color: royalblue;
+        }
+
+            .signin a:hover {
+                text-decoration: underline royalblue;
+            }
+
+    .flex {
+        display: flex;
+        width: 100%;
+        gap: 6px;
+    }
+
+    .form label {
+        position: relative;
+    }
+
+        .form label .input {
+            width: 100%;
+            padding: 10px 10px 20px 10px;
+            outline: 0;
+            border: 1px solid rgba(105, 105, 105, 0.397);
+            border-radius: 10px;
+        }
+
+            .form label .input + span {
+                position: absolute;
+                left: 10px;
+                top: 15px;
+                color: grey;
+                font-size: 0.9em;
+                cursor: text;
+                transition: 0.3s ease;
+            }
+
+            .form label .input:placeholder-shown + span {
+                top: 15px;
+                font-size: 0.9em;
+            }
+
+            .form label .input:focus + span,
+            .form label .input:valid + span {
+                top: 0px;
+                font-size: 0.7em;
+                font-weight: 600;
+            }
+
+            .form label .input:valid + span {
+                color: green;
+            }
+
+    .submit {
+        border: none;
+        outline: none;
+        background-color: #3498db;
+        padding: 10px;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 16px;
+        transform: .3s ease;
+    }
+
+        .submit:hover {
+            background-color: green;
+            cursor: pointer;
+        }
+
+    to {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+</style>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url('/images/station.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: normal;
+        backdrop-filter: blur(10px)
+    }</style>

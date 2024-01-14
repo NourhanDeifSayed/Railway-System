@@ -1,0 +1,800 @@
+﻿@page
+@model Railway.Pages.DashModel
+@{
+}
+
+@using System.Data.SqlClient;
+
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url('/images/station.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: normal;
+        backdrop-filter: blur(10px);
+    }
+
+    .chart-container {
+        margin: 10px;
+        background-color: #e6e6e6;
+        border: 1px solid #138deb;
+        border-radius: 10px;
+        width:70%; /* Adjust the width as needed */
+        height: 500px;
+        position: relative;
+        display: inline-block; /* Display charts inline */
+    }
+
+    #page-title {
+        background-color: #024876;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width: 200%;
+        box-sizing: border-box;
+        margin-top:-24px;
+        margin-left:-650px;
+
+    }
+
+    #chartdiv {
+        
+        float: left;
+        margin: 10px;
+        margin-left: -600px;
+        background-color: #e6e6e6;
+        margin-top: 10px;
+        border: 1px solid #138deb; /* Use 'border' shorthand for simplicity */
+        border-radius: 10px;
+        border-width: 1px;
+    }
+
+    #chartdiv2 {
+        float: left;
+        margin: 10px;
+        margin-left: 1000px;
+        background-color: #e6e6e6;
+        margin-top:-510px;
+        border: 1px solid #138deb; /* Use 'border' shorthand for simplicity */
+        border-radius: 10px;
+        border-width: 1px;
+    }
+        #chartdiv3{
+        float: left;
+        margin: 10px;
+        margin-left: 200px;
+        background-color: #e6e6e6;
+        margin-top: 50px;
+        border: 1px solid #138deb; /* Use 'border' shorthand for simplicity */
+        border-radius: 10px;
+        border-width: 1px;
+    }
+
+
+</style>
+
+<div id="page-title">
+    <h1>Egy-Railways Annual Summary</h1>
+</div>
+
+<div class="chart-container" id="chartdiv">
+    <h1>Total sold tickets for each station</h1>
+</div>
+
+<div class="chart-container" id="chartdiv2">
+    <h1>Top 5 contribution percentage for each station </h1>
+</div>
+
+<div class="chart-container" id="chartdiv3">
+    <h1>Real time Revnue for each station</h1>
+</div>
+
+<!-- Resources -->
+<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+
+
+
+
+<!-- HTML -->
+@functions {
+    // Function to retrieve data from the database
+    public List<ChartData> GetDataFromDatabase()
+    {
+        List<ChartData> data = new List<ChartData>();
+
+        try
+        {
+            string connectionString = "Data Source=DESKTOP-8f1CJGM;Initial Catalog=newRailWay2;Integrated Security=True";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string sql = "SELECT DISTINCT StationName AS country, TotalSoldTickets AS value FROM EgyptianStationInsights;"; // Replace YourTableName with the actual table name
+
+                using (SqlCommand command = new SqlCommand(sql, connection))
+                {
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            // Populate data from database into ChartData objects
+                            ChartData chartData = new ChartData
+                                {
+                                    country = reader["country"].ToString(),
+                                    value = Convert.ToDouble(reader["value"])
+                                };
+                            data.Add(chartData);
+                        }
+                    }
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            // Handle exceptions
+            Console.WriteLine(ex.Message);
+        }
+
+        return data;
+    }
+
+    // ChartData class to hold data retrieved from the database
+    public class ChartData
+    {
+        public string country { get; set; }
+        public double value { get; set; }
+    }
+}
+
+@{
+    // Retrieve data from the database
+    var chartData = GetDataFromDatabase();
+
+    // Convert chartData to JavaScript array for use in the chart
+    var jsonData = System.Text.Json.JsonSerializer.Serialize(chartData);
+}
+
+<!-- Use jsonData to populate the chart -->
+<script>
+    var dataFromDatabase = @Html.Raw(jsonData);
+    console.log(dataFromDatabase);
+
+    am5.ready(function () {
+
+        // Create root element
+        // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+        var root = am5.Root.new("chartdiv");
+
+        // Set themes
+        // https://www.amcharts.com/docs/v5/concepts/themes/
+        root.setThemes([
+            am5themes_Animated.new(root)
+        ]);
+
+        // Create chart
+        // https://www.amcharts.com/docs/v5/charts/xy-chart/
+        var chart = root.container.children.push(am5xy.XYChart.new(root, {
+            panX: true,
+            panY: true,
+            wheelX: "panX",
+            wheelY: "zoomX",
+            pinchZoomX: true,
+            paddingLeft: 0,
+            paddingRight: 1
+        }));
+
+        // Add cursor
+        // https://www.amcharts.com/docs/v5/charts/xy-chart/cursor/
+        var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
+        cursor.lineY.set("visible", false);
+
+
+        // Create axes
+        // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
+        var xRenderer = am5xy.AxisRendererX.new(root, {
+            minGridDistance: 30,
+            minorGridEnabled: true
+        });
+
+        xRenderer.labels.template.setAll({
+            rotation: -90,
+            centerY: am5.p50,
+            centerX: am5.p100,
+            paddingRight: 15
+        });
+
+        xRenderer.grid.template.setAll({
+            location: 1
+        })
+
+        var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
+            maxDeviation: 0.3,
+            categoryField: "country",
+            renderer: xRenderer,
+            tooltip: am5.Tooltip.new(root, {})
+        }));
+
+        var yRenderer = am5xy.AxisRendererY.new(root, {
+            strokeOpacity: 0.1
+        })
+
+        var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
+            maxDeviation: 0.3,
+            renderer: yRenderer
+        }));
+
+        // Create series
+        // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
+        var series = chart.series.push(am5xy.ColumnSeries.new(root, {
+            name: "Series 1",
+            xAxis: xAxis,
+            yAxis: yAxis,
+            valueYField: "value",
+            sequencedInterpolation: true,
+            categoryXField: "country",
+            tooltip: am5.Tooltip.new(root, {
+                labelText: "{valueY}"
+            })
+        }));
+
+        series.columns.template.setAll({ cornerRadiusTL: 5, cornerRadiusTR: 5, strokeOpacity: 0 });
+        series.columns.template.adapters.add("fill", function (fill, target) {
+            return chart.get("colors").getIndex(series.columns.indexOf(target));
+        });
+
+        series.columns.template.adapters.add("stroke", function (stroke, target) {
+            return chart.get("colors").getIndex(series.columns.indexOf(target));
+        });
+
+
+        // Set data
+        var data = [{
+            country: "USA",
+            value: 2025
+        }, {
+            country: "China",
+            value: 1882
+        }, {
+            country: "Japan",
+            value: 1809
+        }, {
+            country: "Germany",
+            value: 1322
+        }, {
+            country: "UK",
+            value: 1122
+        }, {
+            country: "France",
+            value: 1114
+        }, {
+            country: "India",
+            value: 984
+        }, {
+            country: "Spain",
+            value: 711
+        }, {
+            country: "Netherlands",
+            value: 665
+        }, {
+            country: "South Korea",
+            value: 443
+        }, {
+            country: "Canada",
+            value: 441
+        }];
+
+        xAxis.data.setAll(dataFromDatabase);
+        series.data.setAll(dataFromDatabase);
+
+
+        // Make stuff animate on load
+        // https://www.amcharts.com/docs/v5/concepts/animations/
+        series.appear(1000);
+        chart.appear(1000, 100);
+
+    });
+</script>
+
+<div id="chartdiv2"></div>
+<style>
+
+</style>
+<!-- Repeat the functions and code for the new chart -->
+@functions {
+    // Function to retrieve data for the second chart from the database
+    public List<ChartData> GetSecondChartDataFromDatabase()
+    {
+        List<ChartData> data = new List<ChartData>();
+
+        try
+        {
+            string connectionString = "Data Source=DESKTOP-8f1CJGM;Initial Catalog=newRailWay2;Integrated Security=True";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string sql = "SELECT   StationName AS country, TotalRevenue AS value FROM EgyptianStationInsights WHERE TotalRevenue>8700;"; // Replace with your query
+
+                using (SqlCommand command = new SqlCommand(sql, connection))
+                {
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            // Populate data from database into ChartData objects
+                            ChartData chartData = new ChartData
+                                {
+                                    country = reader["country"].ToString(), // Assuming 'category' is another field you want to display
+                                    value = Convert.ToDouble(reader["value"])
+                                };
+                            data.Add(chartData);
+                        }
+                    }
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            // Handle exceptions
+            Console.WriteLine(ex.Message);
+        }
+
+        return data;
+    }
+}
+
+
+@{
+    // Retrieve data for the second chart from the database
+    var secondChartData = GetSecondChartDataFromDatabase();
+
+    // Convert secondChartData to JavaScript array for use in the second chart
+    var jsonSecondData = System.Text.Json.JsonSerializer.Serialize(secondChartData);
+}
+
+<!-- Use jsonSecondData to populate the second chart -->
+<script>
+    var dataForSecondChart = @Html.Raw(jsonSecondData);
+
+    am5.ready(function () {
+        var root = am5.Root.new("chartdiv2");
+
+        // Set themes
+        // https://www.amcharts.com/docs/v5/concepts/themes/
+        root.setThemes([
+            am5themes_Animated.new(root)
+        ]);
+
+        // Create chart
+        // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/
+        var chart = root.container.children.push(
+            am5percent.PieChart.new(root, {
+                endAngle: 270
+            })
+        );
+
+        // Create series
+        // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Series
+        var series = chart.series.push(
+            am5percent.PieSeries.new(root, {
+                valueField: "value",
+                categoryField: "country",
+                endAngle: 270
+            })
+        );
+
+        series.states.create("hidden", {
+            endAngle: -90
+        });
+
+        // Set data
+        // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
+        series.data.setAll([{
+            category: "Lithuania",
+            value: 501.9
+        }, {
+            category: "Czechia",
+            value: 301.9
+        }, {
+            category: "Ireland",
+            value: 201.1
+        }, {
+            category: "Germany",
+            value: 165.8
+        }, {
+            category: "Australia",
+            value: 139.9
+        }, {
+            category: "Austria",
+            value: 128.3
+        }, {
+            category: "UK",
+            value: 99
+        }]);
+        series.data.setAll(dataForSecondChart);
+        series.appear(1000, 100);
+    });
+</script>
+
+<div id="chartdiv3"></div>
+
+<style>
+
+</style>
+
+@functions {
+    // Function to retrieve data for the third chart from the database
+    public List<ChartData> GetThirdChartDataFromDatabase()
+    {
+        List<ChartData> data = new List<ChartData>();
+
+        try
+        {
+            string connectionString = "Data Source=DESKTOP-8f1CJGM;Initial Catalog=newRailWay2;Integrated Security=True";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string sql = "SELECT   StationName AS country, TotalRevenue AS value FROM EgyptianStationInsights WHERE TotalRevenue > 5000;"; // Replace with your query
+
+                using (SqlCommand command = new SqlCommand(sql, connection))
+                {
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            // Populate data from database into ChartData objects
+                            ChartData chartData = new ChartData
+                                {
+                                    country = reader["country"].ToString(), // Assuming 'category' is another field you want to display
+                                    value = Convert.ToDouble(reader["value"])
+                                };
+                            data.Add(chartData);
+                        }
+                    }
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            // Handle exceptions
+            Console.WriteLine(ex.Message);
+        }
+
+        return data;
+    }
+}
+
+@{
+    // Retrieve data for the third chart from the database
+    var thirdChartData = GetThirdChartDataFromDatabase();
+
+    // Convert thirdChartData to JavaScript array for use in the third chart
+    var jsonThirdData = System.Text.Json.JsonSerializer.Serialize(thirdChartData);
+}
+
+<!-- Use jsonThirdData to populate the third chart -->
+<script>
+    var dataForThirdChart = @Html.Raw(jsonThirdData);
+
+    am5.ready(function () {
+        var root = am5.Root.new("chartdiv3");
+        // Create root element
+        // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+
+
+
+        // Set themes
+        // https://www.amcharts.com/docs/v5/concepts/themes/
+        root.setThemes([
+            am5themes_Animated.new(root)
+        ]);
+
+
+        // Create chart
+        // https://www.amcharts.com/docs/v5/charts/xy-chart/
+        var chart = root.container.children.push(am5xy.XYChart.new(root, {
+            panX: true,
+            panY: true,
+            wheelX: "none",
+            wheelY: "none",
+            paddingLeft: 0
+        }));
+
+        // We don't want zoom-out button to appear while animating, so we hide it
+        chart.zoomOutButton.set("forceHidden", true);
+
+
+        // Create axes
+        // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
+        var xRenderer = am5xy.AxisRendererX.new(root, {
+            minGridDistance: 40,
+            minorGridEnabled: true
+        });
+        xRenderer.labels.template.setAll({
+            rotation: 45,
+            centerY: am5.p50,
+            centerX: 0,
+            paddingRight: 15
+        });
+        xRenderer.grid.template.set("visible", false);
+
+        var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
+            maxDeviation: 0.3,
+            categoryField: "country",
+            renderer: xRenderer
+        }));
+
+        var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
+            maxDeviation: 0.3,
+            min: 0,
+            renderer: am5xy.AxisRendererY.new(root, {})
+        }));
+
+
+        // Add series
+        // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
+        var series = chart.series.push(am5xy.ColumnSeries.new(root, {
+            name: "Series 1",
+            xAxis: xAxis,
+            yAxis: yAxis,
+            valueYField: "value",
+            categoryXField: "country"
+        }));
+
+        // Rounded corners for columns
+        series.columns.template.setAll({
+            cornerRadiusTL: 5,
+            cornerRadiusTR: 5,
+            strokeOpacity: 0
+        });
+
+        // Make each column to be of a different color
+        series.columns.template.adapters.add("fill", function (fill, target) {
+            return chart.get("colors").getIndex(series.columns.indexOf(target));
+        });
+
+        series.columns.template.adapters.add("stroke", function (stroke, target) {
+            return chart.get("colors").getIndex(series.columns.indexOf(target));
+        });
+
+        // Add Label bullet
+        series.bullets.push(function () {
+            return am5.Bullet.new(root, {
+                locationY: 0.5,
+                locationX: -0.5,
+                sprite: am5.Label.new(root, {
+                    text: "{valueYWorking.formatNumber('#.')}",
+                    fill: root.interfaceColors.get("alternativeText"),
+                    centerY: 0,
+                    centerX: am5.p50,
+                    rotation: -90,
+                    populateText: true
+                })
+            });
+        });
+
+
+        // Set data
+        var data = [{
+            "country": "USA",
+            "value": 2025
+        }, {
+            "country": "China",
+            "value": 1882
+        }, {
+            "country": "Japan",
+            "value": 1809
+        }, {
+            "country": "Germany",
+            "value": 1322
+        }, {
+            "country": "UK",
+            "value": 1122
+        }, {
+            "country": "France",
+            "value": 1114
+        }, {
+            "country": "India",
+            "value": 984
+        }, {
+            "country": "Spain",
+            "value": 711
+        }, {
+            "country": "Netherlands",
+            "value": 665
+        }, {
+            "country": "South Korea",
+            "value": 443
+        }, {
+            "country": "Canada",
+            "value": 441
+        }];
+
+        xAxis.data.setAll(dataForThirdChart);
+
+        series.data.setAll(dataForThirdChart);
+        // update data with random values each 1.5 sec
+        setInterval(function () {
+            updateData();
+        }, 1500)
+
+        function updateData() {
+            am5.array.each(series.dataItems, function (dataItem) {
+                var value = dataItem.get("valueY") + Math.round(Math.random() * 300 - 150);
+                if (value < 0) {
+                    value = 10;
+                }
+                // both valueY and workingValueY should be changed, we only animate workingValueY
+                dataItem.set("valueY", value);
+                dataItem.animate({
+                    key: "valueYWorking",
+                    to: value,
+                    duration: 600,
+                    easing: am5.ease.out(am5.ease.cubic)
+                });
+            })
+
+            sortCategoryAxis();
+        }
+
+
+        // Get series item by category
+        function getSeriesItem(category) {
+            for (var i = 0; i < series.dataItems.length; i++) {
+                var dataItem = series.dataItems[i];
+                if (dataItem.get("categoryX") == category) {
+                    return dataItem;
+                }
+            }
+        }
+
+
+        // Axis sorting
+        function sortCategoryAxis() {
+
+            // Sort by value
+            series.dataItems.sort(function (x, y) {
+                return y.get("valueY") - x.get("valueY"); // descending
+                //return y.get("valueY") - x.get("valueY"); // ascending
+            })
+
+            // Go through each axis item
+            am5.array.each(xAxis.dataItems, function (dataItem) {
+                // get corresponding series item
+                var seriesDataItem = getSeriesItem(dataItem.get("category"));
+
+                if (seriesDataItem) {
+                    // get index of series data item
+                    var index = series.dataItems.indexOf(seriesDataItem);
+                    // calculate delta position
+                    var deltaPosition = (index - dataItem.get("index", 0)) / series.dataItems.length;
+                    // set index to be the same as series data item index
+                    dataItem.set("index", index);
+                    // set deltaPosition instanlty
+                    dataItem.set("deltaPosition", -deltaPosition);
+                    // animate delta position to 0
+                    dataItem.animate({
+                        key: "deltaPosition",
+                        to: 0,
+                        duration: 1000,
+                        easing: am5.ease.out(am5.ease.cubic)
+                    })
+                }
+            });
+
+            // Sort axis items by index.
+            // This changes the order instantly, but as deltaPosition is set,
+            // they keep in the same places and then animate to true positions.
+            xAxis.dataItems.sort(function (x, y) {
+                return x.get("index") - y.get("index");
+            });
+        }
+
+
+        // Make stuff animate on load
+        // https://www.amcharts.com/docs/v5/concepts/animations/
+        series.appear(1000);
+        chart.appear(1000, 100);
+
+    });
+</script>
+<style>
+/*     #chartdiv4 {
+        width: 60%;
+        height: 500px;
+        margin-top: 600px;
+        margin-left: 600px;
+    }
+</style>
+
+<!-- Resources -->
+<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+<!-- Chart code -->
+<script>
+    am5.ready(function () {
+
+        // Create root element
+        // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+        var root = am5.Root.new("chartdiv4");
+
+
+        // Set themes
+        // https://www.amcharts.com/docs/v5/concepts/themes/
+        root.setThemes([
+            am5themes_Animated.new(root)
+        ]);
+
+
+        // Create chart
+        // https://www.amcharts.com/docs/v5/charts/percent-charts/sliced-chart/
+        var chart = root.container.children.push(am5percent.SlicedChart.new(root, {
+            layout: root.verticalLayout
+        }));
+
+
+        // Create series
+        // https://www.amcharts.com/docs/v5/charts/percent-charts/sliced-chart/#Series
+        var series = chart.series.push(am5percent.FunnelSeries.new(root, {
+            alignLabels: false,
+            orientation: "vertical",
+            valueField: "value",
+            categoryField: "category"
+        }));
+
+
+        // Set data
+        // https://www.amcharts.com/docs/v5/charts/percent-charts/sliced-chart/#Setting_data
+        series.data.setAll([
+            { value: 10, category: "One" },
+            { value: 9, category: "Two" },
+            { value: 6, category: "Three" },
+            { value: 5, category: "Four" },
+            { value: 4, category: "Five" },
+            { value: 3, category: "Six" },
+            { value: 1, category: "Seven" }
+        ]);
+
+
+        // Play initial series animation
+        // https://www.amcharts.com/docs/v5/concepts/animations/#Animation_of_series
+        series.appear();
+
+
+        // Create legend
+        // https://www.amcharts.com/docs/v5/charts/percent-charts/legend-percent-series/
+        var legend = chart.children.push(am5.Legend.new(root, {
+            centerX: am5.p50,
+            x: am5.p50,
+            marginTop: 15,
+            marginBottom: 15
+        }));
+
+        legend.data.setAll(series.dataItems);
+
+
+        // Make stuff animate on load
+        // https://www.amcharts.com/docs/v5/concepts/animations/
+        chart.appear(1000, 100);
+
+    }); // end am5.ready()
+</script>
+
+<!-- HTML -->
+<div id="chartdiv4"></div */

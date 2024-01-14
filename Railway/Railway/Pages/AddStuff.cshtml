@@ -1,0 +1,33 @@
+﻿@page
+@model Railway.Pages.AddStuffModel
+
+<h1>New Employee</h1>
+<form method="post">
+    <div class="row mb-3">
+        <label class="col-am-3 col-form-lapel">Name</label>
+        <div class="col mb-6">
+            <input type="text" class="form-control" name="name" value="@Model.empInfo.StaffName" required />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-am-3 col-form-lapel">Address</label>
+        <div class="col mb-6">
+            <input type="text" class="form-control" name="address" value="@Model.empInfo.StaffAddress" required />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-am-3 col-form-lapel">Phone Number</label>
+        <div class="col mb-6">
+            <input type="text" class="form-control" name="phone" value="@Model.empInfo.StaffPhone" required />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-am-3 col-form-lapel">Role</label>
+        <div class="col mb-6">
+            <input type="text" class="form-control" name="role" value="@Model.empInfo.StaffRole" required />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
